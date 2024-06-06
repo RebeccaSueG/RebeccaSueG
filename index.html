@@ -6,8 +6,6 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
     <title>Becca</title>
 </head>
 
@@ -45,7 +43,7 @@
 
     </header>
 
-    <img src="/portfolio/beckywhat.jpg" alt="becky posing with a hat" class="center">
+    <img src="beckywhat.jpg" alt="becky posing with a hat" class="center">
 
 
     <!--<div class="card"></div> -->
@@ -55,57 +53,78 @@
         </h2>
     </div>
     <main>
-        </style>
-        </head>
 
-        <body>
-            <p>Click on the buttons inside the tabbed menu:</p>
+        <p>Click on the buttons inside the tabbed menu:</p>
 
-            <div id="Skills" class="tabcontent">
-                <h1>Skills</h1>
-                <p>I have many different skills.</p>
+        <div id="Skills" class="tabcontent">
+            <h1>Skills</h1>
+            <p>I have many different skills:</p>
+            <p>Attention to details</p>
+            <p>Observant</p>
+            <p>Empathy</p>
+            <p>Basic HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+        </div>
+
+        <div id="Family" class="tabcontent">
+            <h1>Family</h1>
+            <p>Family is very important to me.</p>
+            <h5>Image Flip with Text</h5>
+            <h6>Hover over the image below:</h6>
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="/portfolio/South Padre.jpg" alt="South Padre Island" style="width:300px;height:200px">
+                    </div>
+                    <div class="flip-box-back">
+                        <h5>South Padre Island</h5>
+                        <p>What an amazing city</p>
+                    </div>
+                </div>
             </div>
+        </div>
 
-            <div id="Family" class="tabcontent">
-                <h1>Family</h1>
-                <p>Family is very important to me.</p>
-            </div>
+        <div id="Hobies" class="tabcontent">
+            <h1>Hobies</h1>
+            <p>I like to work in the yard.</p>
+            <p> I love to cut people's hair who are homebound and also my pets!</p>
+            <p>My most favorite things is to play in the water and sunshine with family!</p>
+        </div>
 
-            <div id="Hobies" class="tabcontent">
-                <h1>Hobies</h1>
-                <p>I like to work in the yard.</p>
-            </div>
+        <div id="Contact" class="tabcontent">
+            <h1>Contact</h1>
+            <p>Please contact me with LinkedIn.</p>
+            <a target="_blank"
+                href="https://www.linkedin.com/in/rebecca-gonzalez-remoteprofessional?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bx4BJIpHuTieiyphm6afwwg%3D%3D">Connect
+                with me
+            </a>
+        </div>
 
-            <div id="Contact" class="tabcontent">
-                <h1>Contact</h1>
-                <p>Please contact me with LinkedIn.</p>
-            </div>
+        <button class="tablink" onclick="openTab('Skills', this, 'red')" id="defaultOpen">Skills</button>
+        <button class="tablink" onclick="openTab('Family', this, 'green')">Family</button>
+        <button class="tablink" onclick="openTab('Hobies', this, 'blue')">Hobies</button>
+        <button class="tablink" onclick="openTab('Contact', this, 'orange')">Contact</button>
 
-            <button class="tablink" onclick="openTab('Skills', this, 'red')" id="defaultOpen">Skills</button>
-            <button class="tablink" onclick="openTab('Family', this, 'green')">Family</button>
-            <button class="tablink" onclick="openTab('Hobies', this, 'blue')">Hobies</button>
-            <button class="tablink" onclick="openTab('Contact', this, 'orange')">Contact</button>
-
-            <script>
-                function openTab(cityName, elmnt, color) {
-                    var i, tabcontent, tablinks;
-                    tabcontent = document.getElementsByClassName("tabcontent");
-                    for (i = 0; i < tabcontent.length; i++) {
-                        tabcontent[i].style.display = "none";
-                    }
-                    tablinks = document.getElementsByClassName("tablink");
-                    for (i = 0; i < tablinks.length; i++) {
-                        tablinks[i].style.backgroundColor = "";
-                    }
-                    document.getElementById(cityName).style.display = "block";
-                    elmnt.style.backgroundColor = color;
-
+        <script>
+            function openTab(cityName, elmnt, color) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
                 }
-                // Get the element with id="defaultOpen" and click on it
-                document.getElementById("defaultOpen").click();
-            </script>
+                tablinks = document.getElementsByClassName("tablink");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].style.backgroundColor = "";
+                }
+                document.getElementById(cityName).style.display = "block";
+                elmnt.style.backgroundColor = color;
 
-        </body>
+            }
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+        </script>
+
 
         <!--<section>
                 <div class="content-section">
@@ -186,7 +205,7 @@
     <div class="flip-box">
         <div class="flip-box-inner">
             <div class="flip-box-front">
-                <img src="South Padre.jpg" alt="South Padre Island" style="width:300px;height:200px">
+                <img src="/portfolio/South Padre.jpg" alt="South Padre Island" style="width:300px;height:200px">
             </div>
             <div class="flip-box-back">
                 <h5>South Padre Island</h5>
