@@ -5,7 +5,9 @@
 
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content=width=device-width, initial-scale=1">
+
+
     <title>Becca</title>
 </head>
 
@@ -53,68 +55,72 @@
         </h2>
     </div>
     <main>
+        </style>
+        </head>
 
-        <p>Click on the buttons inside the tabbed menu:</p>
+        <body>
+            <p>Click on the buttons inside the tabbed menu:</p>
 
-        <div id="Skills" class="tabcontent">
-            <h1>Skills</h1>
-            <p>Here is just a few of my skills:</p>
-            <p>Attention to details</p>
-            <p>Observant</p>
-            <p>Empathy</p>
-            <p>Basic HTML</p>
-            <p>CSS</p>
-            <p>JavaScript</p>
-        </div>
+            <div id="Skills" class="tabcontent">
+                <h1>Skills</h1>
+                <p>Here are a few of my skills:</p>
+                <p>Attention to details</p>
+                <p>Observant</p>
+                <p>Empathy</p>
+                <p>Basic HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+            </div>
 
-        <div id="Family" class="tabcontent">
-            <h1>Family</h1>
-           <p>These are some of the things we do as a Family.</p>
-            <p>Camping</p>
-            <P>Family pictures</P>
-             <p>Playing games</p>
-        </div>
+            <div id="Family" class="tabcontent">
+                <h1>Family</h1>
+                <p>These are some of the things we do togather:</p>
+                <p>Camping</p>
+                <P>Family pictures</P>
+                <p>Playing games</p>
+            </div>
 
-        <div id="Hobbies" class="tabcontent">
-            <h1>Hobbies</h1>
-            <p>I like to work in the yard.</p>
-            <p> I love to cut people's hair who are homebound and also my pets!</p>
-            <p>My most favorite things is to play in the water and sunshine with family!</p>
-        </div>
+            <div id="Hobbies" class="tabcontent">
+                <h1>Hobbies</h1>
+                <p>I like to work in the yard.</p>
+                <p>I love to cut people's hair who are homebound and also my pets!</p>
+                <p>My most favorite thing is to play in the water and sunshine with family!</p>
+            </div>
 
-        <div id="Contact" class="tabcontent">
-            <h1>Contact</h1>
-            <p>Please contact me with LinkedIn.</p>
-            <a target="_blank"
-                href="https://www.linkedin.com/in/rebecca-gonzalez-remoteprofessional?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bx4BJIpHuTieiyphm6afwwg%3D%3D">Connect
-                with me
-            </a>
-        </div>
+            <div id="Contact" class="tabcontent">
+                <h1>Contact</h1>
+                <p>Please contact me with LinkedIn.</p>
+                <a target="_blank"
+                    href="https://www.linkedin.com/in/rebecca-gonzalez-remoteprofessional?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bx4BJIpHuTieiyphm6afwwg%3D%3D">Connect
+                    with me
+                </a>
+            </div>
 
-        <button class="tablink" onclick="openTab('Skills', this, 'red')" id="defaultOpen">Skills</button>
-        <button class="tablink" onclick="openTab('Family', this, 'green')">Family</button>
-        <button class="tablink" onclick="openTab('Hobbies', this, 'blue')">Hobbies</button>
-        <button class="tablink" onclick="openTab('Contact', this, 'orange')">Contact</button>
+            <button class="tablink" onclick="openTab('Skills', this, 'orange')" id="defaultOpen">Skills</button>
+            <button class="tablink" onclick="openTab('Family', this, 'lightblue')">Family</button>
+            <button class="tablink" onclick="openTab('Hobbies', this, 'pink')">Hobbies</button>
+            <button class="tablink" onclick="openTab('Contact', this, 'olive')">Contact</button>
 
-        <script>
-            function openTab(cityName, elmnt, color) {
-                var i, tabcontent, tablinks;
-                tabcontent = document.getElementsByClassName("tabcontent");
-                for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
+            <script>
+                function openTab(cityName, elmnt, color) {
+                    var i, tabcontent, tablinks;
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablink");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].style.backgroundColor = "";
+                    }
+                    document.getElementById(cityName).style.display = "block";
+                    elmnt.style.backgroundColor = color;
+
                 }
-                tablinks = document.getElementsByClassName("tablink");
-                for (i = 0; i < tablinks.length; i++) {
-                    tablinks[i].style.backgroundColor = "";
-                }
-                document.getElementById(cityName).style.display = "block";
-                elmnt.style.backgroundColor = color;
+                // Get the element with id="defaultOpen" and click on it
+                document.getElementById("defaultOpen").click();
+            </script>
 
-            }
-            // Get the element with id="defaultOpen" and click on it
-            document.getElementById("defaultOpen").click();
-        </script>
-
+        </body>
 
         <!--<section>
                 <div class="content-section">
@@ -195,7 +201,7 @@
     <div class="flip-box">
         <div class="flip-box-inner">
             <div class="flip-box-front">
-                <img src="/portfolio/South Padre.jpg" alt="South Padre Island" style="width:300px;height:200px">
+                <img src="South Padre.jpg" alt="South Padre Island" style="width:300px;height:200px">
             </div>
             <div class="flip-box-back">
                 <h5>South Padre Island</h5>
@@ -264,7 +270,7 @@
 
 <footer>
 
-<p> All made possible due to Techmoms!!</p>
+    <p> All made possible due to Techmoms!!</p>
 </footer>
 
 </html>
